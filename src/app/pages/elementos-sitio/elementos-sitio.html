@@ -1,0 +1,40 @@
+<section class="elementos-container">
+  <h1>Elementos del sitio</h1>
+  <p class="descripcion">
+    En esta sección se muestran de forma interactiva los principales
+    elementos de navegación y estructura utilizados en un sitio web
+    desarrollado con Angular.
+  </p>
+
+  <!-- BREADCRUMBS -->
+  <div class="card">
+    <h2> Breadcrumbs</h2>
+    <nav class="breadcrumbs">
+      <span>Inicio</span> ›
+      <span>Elementos</span> ›
+      <strong>{{ seccionActual }}</strong>
+    </nav>
+    <select (change)="cambiarSeccion($event)">
+      <option value="Búsqueda">Búsqueda</option>
+      <option value="Mapa del sitio">Mapa del sitio</option>
+      <option value="Navegación">Navegación</option>
+    </select>
+  </div>
+
+  <!-- BUSCADOR -->
+  <div class="card">
+    <h2> Barra de búsqueda</h2>
+    <input
+      type="text"
+      placeholder="Buscar elemento..."
+      [(ngModel)]="busqueda"
+    />
+    <ul>
+      <li *ngFor="let item of filtrarElementos()">
+        {{ item }}
+      </li>
+    </ul>
+  </div>
+
+ 
+</section>

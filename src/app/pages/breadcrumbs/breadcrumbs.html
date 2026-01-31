@@ -1,0 +1,75 @@
+<section class="breadcrumbs-container">
+  <h1>Tipos de Breadcrumbs y su Funcionamiento</h1>
+  <p class="intro">
+    No todos los breadcrumbs funcionan igual. Existen tres tipos principales,
+    cada uno diseñado para contextos específicos y objetivos distintos de navegación.
+  </p>
+
+  <!-- JERARQUÍA -->
+  <div class="breadcrumb-card">
+    <div class="icon"></div>
+    <div class="content">
+      <h2>Basadas en jerarquía</h2>
+      <p>
+        Muestran la estructura fija del sitio desde la página principal hasta
+        la página actual. Son ideales para sitios con arquitectura clara y niveles
+        bien definidos.
+      </p>
+      <nav class="breadcrumb">
+        <a routerLink="/">Inicio</a>
+        <span>›</span>
+        <a>Blog</a>
+        <span>›</span>
+        <a>Tecnología</a>
+        <span>›</span>
+        <strong>Inteligencia Artificial</strong>
+      </nav>
+    </div>
+  </div>
+
+  <!-- RUTA -->
+  <div class="breadcrumb-card">
+    <div class="icon"></div>
+    <div class="content">
+      <h2>Basadas en ruta</h2>
+      <p>
+        Representan el camino real que siguió el usuario para llegar a la página
+        actual, incluyendo páginas intermedias visitadas.
+      </p>
+      <nav class="breadcrumb">
+        <a routerLink="/">Inicio</a>
+        <span>›</span>
+        <a routerLink="/busqueda">Búsqueda "zapatos"</a>
+        <span>›</span>
+        <a>Resultados</a>
+        <span>›</span>
+        <strong>Producto</strong>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ATRIBUTOS -->
+  <div class="breadcrumb-card">
+    <div class="icon"></div>
+    <div class="content">
+      <h2>Basadas en atributos</h2>
+      <p>
+        Muy utilizadas en e-commerce. Muestran filtros aplicados como categoría,
+        talla, precio o marca seleccionados por el usuario.
+      </p>
+      <nav class="breadcrumb">
+        <a>Productos</a>
+        <span>›</span>
+        <a>Mujer</a>
+        <span>›</span>
+        <a>Zapatos</a>
+        <span>›</span>
+        <a>Deportivos</a>
+        <span>›</span>
+        <a>Talla 38</a>
+        <span>›</span>
+        <strong>Nike</strong>
+      </nav>
+    </div>
+  </div>
+</section>

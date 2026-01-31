@@ -1,0 +1,46 @@
+.elementos-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 3rem 1.5rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #1f3a5f;
+  margin-bottom: 1rem;
+}
+
+.descripcion {
+  text-align: center;
+  color: #555;
+  margin-bottom: 3rem;
+}
+
+.card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  margin-bottom: 2rem;
+}
+
+.breadcrumbs {
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+select, input {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+ul {
+  margin-top: 1rem;
+}
+
+.sitemap ul {
+  margin-left: 1.5rem;
+}

@@ -1,0 +1,109 @@
+.mapa-conceptual {
+  padding: 40px;
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.contenedor-arbol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Tarjeta Estilo Horizontal */
+.card {
+  display: flex; /* Alinea imagen y texto a los lados */
+  align-items: center;
+  background: white;
+  border: 2px solid #3498db;
+  border-radius: 12px;
+  padding: 15px;
+  width: 400px; /* Más ancha para que quepa todo */
+  gap: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s, border-color 0.2s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #2980b9;
+}
+
+/* Imagen más grande y legible */
+.card img {
+  width: 920px; /* Tamaño aumentado */
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Contenedor de texto */
+.card .info {
+  text-align: left;
+}
+
+.card h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+/* --- Estilo de Líneas y Conectores --- */
+
+.nivel-padre {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+/* Línea vertical que baja de Inicio */
+.nivel-padre::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 2px;
+  height: 60px;
+  background: #3498db;
+}
+
+.nivel-hijos {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  gap: 30px;
+  padding-top: 40px;
+}
+
+/* Línea horizontal que conecta a todos los hijos */
+.nivel-hijos::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 15%;
+  right: 15%;
+  height: 2px;
+  background: #3498db;
+}
+
+.rama {
+  position: relative;
+}
+
+/* Líneas verticales de cada rama */
+.rama::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  width: 2px;
+  height: 40px;
+  background: #3498db;
+}

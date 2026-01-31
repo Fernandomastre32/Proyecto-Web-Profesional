@@ -1,0 +1,110 @@
+.menu-page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 3rem 1.5rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.intro {
+  color: #555;
+  margin-bottom: 3rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  color: #1f3a5f;
+  margin-bottom: 0.5rem;
+}
+
+.ejemplo {
+  margin-top: 1rem;
+}
+
+/* MENÚ GLOBAL */
+.menu-global {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.menu-global button {
+  border: none;
+  background: #1f3a5f;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: relative;
+  width: fit-content;
+}
+
+.dropdown-btn {
+  background: #1f3a5f;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+.dropdown-content {
+  margin-top: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.5rem;
+}
+
+.dropdown-content span {
+  display: block;
+  padding: 0.3rem 0;
+}
+
+/* CARD BUTTON */
+.card-button {
+  background: #f4f6f8;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.card-button button {
+  margin-top: 0.5rem;
+  background: #1f3a5f;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+}
+
+/* BREADCRUMB */
+.breadcrumb {
+  background: #f1f1f1;
+  padding: 0.6rem;
+  border-radius: 6px;
+}
+
+/* HAMBURGUESA */
+.hamburguesa {
+  width: 30px;
+}
+
+.hamburguesa span {
+  display: block;
+  height: 4px;
+  background: #1f3a5f;
+  margin: 5px 0;
+  border-radius: 2px;
+}
